@@ -1,0 +1,818 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+h2 {
+    font-family: Montserrat;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+p {
+    font-family: Montserrat;
+
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+/* Offcanvas base style */
+.offcanvas-custom {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    /* Move completely off screen */
+    width: 100%;
+    height: 100vh;
+    background-color: #E45D3F;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;
+    z-index: 1050;
+    transition: left 0.3s ease;
+}
+
+/* Show menu */
+.offcanvas-custom.active {
+    left: 0;
+}
+
+/* Close button inside the menu */
+.close-btn {
+    font-size: 30px;
+    border: none;
+    background: none;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+
+.logo-img {
+    height: 100px;
+    width: 100px;
+}
+
+.navbar-nav {
+    padding: 2px;
+    width: 60%;
+    background-color: #E3553AC9;
+    border-radius: 50px;
+    margin-left: 50px;
+    justify-content: center;
+    font-size: 20px;
+}
+
+nav div ul {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link {
+    font-family: inter;
+    font-size: 20px;
+    color: white !important;
+}
+
+.navbar-toggler {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+}
+
+.login-btn {
+    background-color: #E3553AC9;
+    color: white;
+    height: 45px;
+    width: 45px;
+    border: none;
+    font-size: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.baner {
+  height: 90vh;
+  overflow: hidden;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.baner-heading{
+    width: 100%;
+}
+
+.baner h1 {
+    color: white;
+    font-size: 90px;
+    font-weight: 400;
+    font-family: Italiana, serif;
+    margin-top: 120px;
+}
+
+.baner p {
+    font-size: 24px;
+    color: white;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+}
+
+.image-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+
+}
+
+/* Fix height for consistent look */
+.image-card {
+    height: 200px;
+}
+
+
+
+.tour-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.tour-icons .icon-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 15px 20px;
+    border: 1px solid black;
+    border-radius: 30px;
+    font-size: 14px;
+    background-color: #fff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.tour-icons .icon-box i {
+    color: #E45D3F;
+    font-size: 25px;
+}
+
+
+.read-more-btn {
+    background-color: #E45D3F;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 30px;
+}
+
+.ture-description h2 {
+    font-size: 47px;
+    font-family: Montserrat;
+}
+
+.ture-description p {
+    font-size: 20px;
+    font-family: Montserrat;
+}
+
+
+
+.booking-form {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    font-family: Montserrat;
+}
+
+.booking-form h4 {
+    color: #E45D3F;
+    font-weight: 600;
+}
+
+.booking-form input,
+.booking-form textarea {
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.booking-form button {
+    background-color: #E45D3F;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 0px;
+}
+
+
+
+.accordion-header {
+    border: 1px solid #E45D3F;
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 15px;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+
+
+.accordion-header .icon {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    color: #E45D3F;
+    border: 1px solid #E45D3F;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: all 0.3s;
+}
+
+.accordion-body {
+    padding: 0 20px 15px;
+    display: none;
+    animation: fadeIn 0.3s ease-in-out;
+    font-family: Inter, sans-serif;
+    color: #333;
+    font-size: 16px;
+}
+
+.accordion-item.active .accordion-body {
+    display: block;
+}
+
+.accordion-header .icon {
+    background-color: #E45D3F;
+    color: white;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.card-box {
+    border: 0.2px solid #9B9898;
+    border-radius: 40px;
+    margin: 5px;
+    padding: 10px;
+    margin-bottom: 42px;
+}
+
+.card-box img {
+    border-radius: 40px;
+}
+
+.card-hedeing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.crad-deatailes {
+    margin-left: -32px;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    justify-content: space-between;
+}
+
+.details-btn {
+    background-color: #E3553AC9;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    width: 90%;
+    margin-left: 20px;
+    padding: 8px;
+    margin-top: 20px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #000;
+}
+
+footer {
+    background-color: #94A7D2;
+    padding: 50px 0px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: white;
+}
+
+.footer-img {
+    height: 300px;
+    width: 300px;
+}
+
+.footer-content .vf-input {
+    width: 350px;
+    padding: 15px;
+    border-radius: 50px;
+}
+
+.footer-content .vf-button {
+    border: none;
+    color: white;
+    background-color: #5E7CBD;
+    border-radius: 50px;
+    padding: 8px 30px;
+    position: absolute;
+    top: 8px;
+    right: 80px;
+}
+
+.footer-content-2 {
+    padding: 40px;
+}
+
+.footer-content-3 {
+    padding: 40px;
+}
+
+.icon {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+
+
+@media (max-width:768px) {
+
+    .logo-img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .navbar-nav {
+        background: transparent;
+        justify-content: center;
+        font-size: 20px;
+    }
+
+    .login-btn {
+        background-color: #E3553AC9;
+        color: white;
+        height: 40px;
+        width: 40px;
+        border: none;
+        font-size: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+
+    .baner {
+        background-image: url('images/Contactimg.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 60vh;
+        width: 100%;
+        position: relative;
+        transition: background-image 0.8s ease-in-out;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .baner h1 {
+        color: white;
+        font-size: 1.5rem !important;
+        font-weight: 400;
+        font-family: Italiana, serif;
+        margin-top: 30px;
+    }
+
+    .baner p {
+        font-size: 1rem;
+        color: white;
+        font-family: Inter, sans-serif;
+        font-weight: 400;
+    }
+
+    .tour-icons .icon-box i {
+        color: #E45D3F;
+        font-size: 15px;
+    }
+
+    .tour-icons .icon-box {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 10px;
+        border: 1px solid black;
+        border-radius: 30px;
+        font-size: 14px;
+        background-color: #fff;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .ture-description h2 {
+        font-size: 20px !important;
+    }
+
+    .swiper-slide {
+        padding: 0px 5px;
+    }
+
+
+    .swiper-pagination-bullet-active {
+        background-color: #E45D3F !important;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: #f3c4b9 !important;
+        opacity: 1 !important;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #E45D3F !important;
+    }
+
+
+    .ture-description p {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    section {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .container {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .ture-description,
+    .booking-form {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .booking-form form {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    form h4 {
+        margin-bottom: 1rem;
+    }
+
+    .form-control,
+    .form-label,
+    .read-more-btn {
+        font-size: 14px;
+    }
+
+    .accordion-header {
+        font-size: 15px;
+        padding: 12px 15px;
+    }
+
+    .accordion-body {
+        font-size: 14px;
+    }
+
+    .accordion {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0px;
+    }
+
+    footer {
+        background-color: #94A7D2;
+        padding: 50px 0px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        color: white;
+    }
+
+    .footer-img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .footer-content .position-relative {
+        max-width: 100%;
+    }
+
+    .footer-content .vf-input {
+        width: 100%;
+        padding: 10px 130px 10px 20px;
+        border-radius: 50px;
+        border: none;
+        font-size: 14px;
+    }
+
+    .footer-content .vf-button {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        border: none;
+        color: white;
+        background-color: #5E7CBD;
+        border-radius: 50px;
+        padding: 7px 20px;
+        font-size: 14px;
+        white-space: nowrap;
+
+    }
+
+    .footer-content-2 {
+        padding: 40px;
+    }
+
+    .footer-content-3 {
+        padding: 10px 0px;
+    }
+
+    .icon {
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border: 2px solid white;
+        border-radius: 50%;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+
+
+}
+
+@media (max-width:1024px) {
+    .logo-img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .navbar-nav {
+        background: transparent;
+        justify-content: center;
+        font-size: 20px;
+    }
+
+    .baner {
+        background-image: url('images/Contactimg.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 70vh;
+        width: 100%;
+        position: relative;
+        transition: background-image 0.8s ease-in-out;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .baner h1 {
+        color: white;
+        font-size: 2.5rem;
+        font-weight: 400;
+        font-family: Italiana, serif;
+        margin-top: 30px;
+    }
+
+    .baner p {
+        font-size: 1rem;
+        color: white;
+        font-family: Inter, sans-serif;
+        font-weight: 400;
+    }
+
+    .ture-description h2 {
+        font-size: 35px;
+    }
+
+    .footer-content .position-relative {
+        max-width: 100%;
+    }
+
+    .footer-content .vf-input {
+        width: 100%;
+        padding: 10px 130px 10px 20px;
+        /* right padding for button space */
+        border-radius: 50px;
+        border: none;
+    }
+
+    .footer-content .vf-button {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        border: none;
+        color: white;
+        background-color: #5E7CBD;
+        border-radius: 50px;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .footer-img {
+        height: 250px;
+        width: 250px;
+    }
+
+    .footer-content-2 {
+        padding: 0px;
+    }
+
+    .footer-content-3 {
+        padding: 30px 0px;
+    }
+
+
+}
+
+@media (min-width:1025px) and (max-width:1496px) {
+    .logo-img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .baner {
+        background-image: url('images/Contactimg.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 80vh;
+        width: 100%;
+        position: relative;
+        transition: background-image 0.8s ease-in-out;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .baner h1 {
+        color: white;
+        font-size: 4rem;
+        font-weight: 400;
+        font-family: Italiana, serif;
+        margin-top: 40px;
+    }
+
+    .baner p {
+        font-size: 1.2rem;
+        color: white;
+        font-family: Inter, sans-serif;
+        font-weight: 400;
+    }
+
+
+    .footer-img {
+        height: 270px;
+        width: 270px;
+    }
+
+    /* ✅ Updated button & input styles for footer */
+    .footer-content .position-relative {
+        max-width: 100%;
+    }
+
+    .footer-content-2 {
+        padding: 0px !important;
+    }
+
+    .footer-content-3 {
+        padding: 0px;
+    }
+
+    .footer-content .vf-input {
+        width: 100%;
+        padding: 12px 130px 12px 20px;
+        /* Extra right padding for button space */
+        border-radius: 50px;
+        border: none;
+    }
+
+    .footer-content .vf-button {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        border: none;
+        color: white;
+        background-color: #5E7CBD;
+        border-radius: 50px;
+        padding: 10px 20px;
+        font-size: 16px;
+        white-space: nowrap;
+    }
+
+}
